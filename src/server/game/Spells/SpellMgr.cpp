@@ -2853,6 +2853,11 @@ void SpellMgr::LoadSpellInfoCustomAttributes()
                 case 72133: // Pain and Suffering
                     spellInfo->AttributesCu |= SPELL_ATTR0_CU_CONE_LINE;
                     break;
+				case 119072: // Holy Wrath
+					spellInfo->Effects[EFFECT_1].ScalingMultiplier = 0;
+					spellInfo->Effects[EFFECT_1].DeltaScalingMultiplier = 0;
+					spellInfo->Effects[EFFECT_1].BonusMultiplier = 0.05f;
+					break;
                 case 24340: // Meteor
                 case 26558: // Meteor
                 case 28884: // Meteor
